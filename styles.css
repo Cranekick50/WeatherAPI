@@ -1,0 +1,25 @@
+
+.headerEl {
+    text-align: center;
+    background-color: lightgray;
+}
+.menuEl {
+    text-align: center;
+    background-color: lightblue;
+}
+
+.mainEl {
+    text-align: center;
+    background-color: lightgreen;
+}
+
+.footerEl {
+    text-align: center;
+    background-color:red
+}
+
+
+
+
+
+
