@@ -18,6 +18,7 @@ $(".saveBtn").click(function(){
                     url: searchURL2,
                     method: "GET"
                 }).then(function(response) {
+                    console.log(response)
                     var date = new Date()
                     var d = moment(date).format('L')
                     $(".nameCity").text(value+" "+d);
