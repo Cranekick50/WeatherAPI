@@ -18,12 +18,17 @@ $(".saveBtn").click(function(){
                     method: "GET"
                 }).then(function(response) {
                     console.log(response)
-                    $(".nameCity").text(value);
-                    $(".tempCity").text(JSON.stringify("Temperature: "+response.current.temp));
+                    var d = new Date()
+                    $(".nameCity").text(value+" "+d);
+                    var tempF = (response.current.temp - 273.15) * 1.80 + 32;
+                    $(".tempCity").text(JSON.stringify("Temperature (F): "+tempF.toFixed(2)));
                     $(".humidityCity").text(JSON.stringify("Humidity: "+response.current.humidity+"%"));
                     $(".windCity").text(JSON.stringify("Wind Speed: "+response.current.wind_speed+" MPH"));
                     $(".uvCity").text(JSON.stringify("UV index: " +response.current.uvi));
-        
+                }).then(function(response) {
+                    
+                    
+        });
         });
     });    
 }
