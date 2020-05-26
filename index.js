@@ -25,10 +25,15 @@ $(".saveBtn").click(function(){
                     $(".humidityCity").text(JSON.stringify("Humidity: "+response.current.humidity+"%"));
                     $(".windCity").text(JSON.stringify("Wind Speed: "+response.current.wind_speed+" MPH"));
                     $(".uvCity").text(JSON.stringify("UV index: " +response.current.uvi));
+                    if (response.current.uvi < 6) {
+                        $(".uvCity").css("background-color","green");
+                    } else {
+                        $(".uvCity").css("background-color","red");
+                    }
                 }).then(function(response) {
                     
                     
-        });
+        
         });
     });    
 }
