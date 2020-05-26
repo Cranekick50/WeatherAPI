@@ -32,6 +32,17 @@ $(".saveBtn").click(function(){
                     } else {
                         $(".uvCity").css("background-color","red");
                     }
+                    if (response.daily[0].weather[0].description === "clear sky") {
+                        $(".currentIcon").addClass("fa fa-sun")
+                    } if (response.daily[0].weather[0].description === "light rain") {
+                        $(".currentIcon").addClass("fa fa-cloud-sun-rain")
+                    } if (response.daily[0].weather[0].description === "moderate rain") {
+                        $(".currentIcon").addClass("fa fa-cloud-showers-heavy")
+                    } if (response.daily[0].weather[0].description === "overcast clouds") {
+                        $(".currentIcon").addClass("fa fa-cloud")
+                    }
+
+
                     var dayOne = moment(d).add(1, 'days').format('L');
                     var tempF = (response.daily[1].temp.day - 273.15) * 1.80 + 32;
                     $(".day1").text(dayOne)
