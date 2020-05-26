@@ -37,31 +37,77 @@ $(".saveBtn").click(function(){
                     $(".day1").text(dayOne)
                     $(".temp1").text(JSON.stringify("Temperature (F): "+tempF.toFixed(2)))
                     $(".humid1").text(JSON.stringify("Humidity: "+response.daily[1].humidity))
+                    console.log (response.daily[2].weather[0].description)
+                    if (response.daily[1].weather[0].description === "clear sky") {
+                        $(".icon1").addClass("fa fa-sun")
+                    } if (response.daily[1].weather[0].description === "light rain") {
+                        $(".icon1").addClass("fa fa-cloud-sun-rain")
+                    } if (response.daily[1].weather[0].description === "moderate rain") {
+                        $(".icon1").addClass("fa fa-cloud-showers-heavy")
+                    } if (response.daily[1].weather[0].description === "overcast clouds") {
+                        $(".icon1").addClass("fa fa-cloud")
+                    }
+                        
 
                     var dayTwo = moment(d).add(2, 'days').format('L');
                     var tempF = (response.daily[2].temp.day - 273.15) * 1.80 + 32;
                     $(".day2").text(dayTwo)
                     $(".temp2").text(JSON.stringify("Temperature (F): "+tempF.toFixed(2)))
                     $(".humid2").text(JSON.stringify("Humidity: "+response.daily[2].humidity))
+                    if (response.daily[2].weather[0].description === "clear sky") {
+                        $(".icon2").addClass("fa fa-sun")
+                    } if (response.daily[2].weather[0].description === "light rain") {
+                        $(".icon2").addClass("fa fa-cloud-sun-rain")
+                    } if (response.daily[2].weather[0].description === "moderate rain") {
+                        $(".icon2").addClass("fa fa-cloud-showers-heavy")
+                    } if (response.daily[2].weather[0].description === "overcast clouds") {
+                        $(".icon2").addClass("fa fa-cloud")
+                    }
 
                     var dayThree = moment(d).add(3, 'days').format('L');
                     var tempF = (response.daily[3].temp.day - 273.15) * 1.80 + 32;
                     $(".day3").text(dayThree)
                     $(".temp3").text(JSON.stringify("Temperature (F): "+tempF.toFixed(2)))
                     $(".humid3").text(JSON.stringify("Humidity: "+response.daily[3].humidity))
+                    if (response.daily[3].weather[0].description === "clear sky") {
+                        $(".icon3").addClass("fa fa-sun")
+                    } if (response.daily[3].weather[0].description === "light rain") {
+                        $(".icon3").addClass("fa fa-cloud-sun-rain")
+                    } if (response.daily[3].weather[0].description === "moderate rain") {
+                        $(".icon3").addClass("fa fa-cloud-showers-heavy")
+                    } if (response.daily[3].weather[0].description === "overcast clouds") {
+                        $(".icon3").addClass("fa fa-cloud")
+                    }
 
                     var dayFour = moment(d).add(4, 'days').format('L');
                     var tempF = (response.daily[4].temp.day - 273.15) * 1.80 + 32;
                     $(".day4").text(dayFour)
                     $(".temp4").text(JSON.stringify("Temperature (F): "+tempF.toFixed(2)))
                     $(".humid4").text(JSON.stringify("Humidity: "+response.daily[4].humidity))
+                    if (response.daily[4].weather[0].description === "clear sky") {
+                        $(".icon4").addClass("fa fa-sun")
+                    } if (response.daily[4].weather[0].description === "light rain") {
+                        $(".icon4").addClass("fa fa-cloud-sun-rain")
+                    } if (response.daily[4].weather[0].description === "moderate rain") {
+                        $(".icon4").addClass("fa fa-cloud-showers-heavy")
+                    } if (response.daily[4].weather[0].description === "overcast clouds") {
+                        $(".icon4").addClass("fa fa-cloud")
+                    }
 
                     var dayFive = moment(d).add(5, 'days').format('L');
                     var tempF = (response.daily[5].temp.day - 273.15) * 1.80 + 32;
                     $(".day5").text(dayFive)
                     $(".temp5").text(JSON.stringify("Temperature (F): "+tempF.toFixed(2)))
                     $(".humid5").text(JSON.stringify("Humidity: "+response.daily[5].humidity))
-                    
+                    if (response.daily[5].weather[0].description === "clear sky") {
+                        $(".icon5").addClass("fa fa-sun")
+                    } if (response.daily[5].weather[0].description === "light rain") {
+                        $(".icon5").addClass("fa fa-cloud-sun-rain")
+                    } if (response.daily[5].weather[0].description === "moderate rain") {
+                        $(".icon5").addClass("fa fa-cloud-showers-heavy")
+                    } if (response.daily[5].weather[0].description === "overcast clouds") {
+                        $(".icon5").addClass("fa fa-cloud")
+                    }
         
         });
     });    

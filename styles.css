@@ -25,9 +25,31 @@
 
 .footerEl {
     text-align: center;
-    
+    display: flex;
 }
 
+.fa {
+    
+  }
+
+.fa-cloud {
+    color: white;
+    font-size: 80px;
+}
+
+.fa-sun {
+    color: white;
+    font-size: 80px;
+}
+
+.fa-cloud-showers-heavy {
+    color: white;
+    font-size: 80px;
+}
+
+.fa-cloud-sun-rain {
+    color: white;
+    font-size: 80px;
 
 
 
