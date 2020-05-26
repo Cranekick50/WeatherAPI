@@ -18,7 +18,6 @@ $(".saveBtn").click(function(){
                     url: searchURL2,
                     method: "GET"
                 }).then(function(response) {
-                    console.log(d)
                     var date = new Date()
                     var d = moment(date).format('L')
                     $(".nameCity").text(value+" "+d);
@@ -32,12 +31,35 @@ $(".saveBtn").click(function(){
                     } else {
                         $(".uvCity").css("background-color","red");
                     }
-                    console.log (response.daily[1].temp.day)
-                    var dayOne = Date.add(1).day();
+                    var dayOne = moment(d).add(1, 'days').format('L');
                     var tempF = (response.daily[1].temp.day - 273.15) * 1.80 + 32;
                     $(".day1").text(dayOne)
                     $(".temp1").text(JSON.stringify("Temperature (F): "+tempF.toFixed(2)))
                     $(".humid1").text(JSON.stringify("Humidity: "+response.daily[1].humidity))
+
+                    var dayTwo = moment(d).add(2, 'days').format('L');
+                    var tempF = (response.daily[2].temp.day - 273.15) * 1.80 + 32;
+                    $(".day2").text(dayTwo)
+                    $(".temp2").text(JSON.stringify("Temperature (F): "+tempF.toFixed(2)))
+                    $(".humid2").text(JSON.stringify("Humidity: "+response.daily[2].humidity))
+
+                    var dayThree = moment(d).add(3, 'days').format('L');
+                    var tempF = (response.daily[3].temp.day - 273.15) * 1.80 + 32;
+                    $(".day3").text(dayThree)
+                    $(".temp3").text(JSON.stringify("Temperature (F): "+tempF.toFixed(2)))
+                    $(".humid3").text(JSON.stringify("Humidity: "+response.daily[3].humidity))
+
+                    var dayFour = moment(d).add(4, 'days').format('L');
+                    var tempF = (response.daily[4].temp.day - 273.15) * 1.80 + 32;
+                    $(".day4").text(dayFour)
+                    $(".temp4").text(JSON.stringify("Temperature (F): "+tempF.toFixed(2)))
+                    $(".humid4").text(JSON.stringify("Humidity: "+response.daily[4].humidity))
+
+                    var dayFive = moment(d).add(5, 'days').format('L');
+                    var tempF = (response.daily[5].temp.day - 273.15) * 1.80 + 32;
+                    $(".day5").text(dayFive)
+                    $(".temp5").text(JSON.stringify("Temperature (F): "+tempF.toFixed(2)))
+                    $(".humid5").text(JSON.stringify("Humidity: "+response.daily[5].humidity))
                     
         
         });
