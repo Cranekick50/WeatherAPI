@@ -24,7 +24,7 @@
 
 <h3>Demo Photos</h3>
 
-    ![Image of Weather API homework](./images/weatherAPI.JPG)
+    ![Image of Weather API homework](weatherAPI.JPG)
    
 
 </body>
