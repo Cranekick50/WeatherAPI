@@ -25,6 +25,8 @@
 <h3>Demo Photos</h3>
 
     ![Image of Weather API homework](https://github.com/Cranekick50/WeatherAPI/blob/master/Images/weatherAPI.JPG)
+
+    <img alt="stuff" src="https://github.com/Cranekick50/WeatherAPI/blob/master/Images/weatherAPI.JPG%22/%3E
    
 
 </body>
