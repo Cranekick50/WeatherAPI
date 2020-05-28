@@ -24,7 +24,7 @@
 
 <h3>Demo Photos</h3>
 
-    ![Image of Weather API homework](C:\Users\16262\GitHub\WeatherAPI\Images)
+    ![Image of Weather API homework](https://github.com/Cranekick50/WeatherAPI/images/weatherAPI.JPG)
    
 
 </body>
