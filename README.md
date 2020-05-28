@@ -28,6 +28,6 @@
 
     <img alt="stuff" src="https://github.com/Cranekick50/WeatherAPI/blob/master/Images/weatherAPI.JPG%22/%3E"/>
    
-   <div align="center"><img alt="Frontity & WordPress explanation" src="https://github.com/Cranekick50/WeatherAPI/blob/master/Images/weatherAPI.JPG%22/%3E/%3E" width="600px"></div>
+   <div><img src="https://github.com/Cranekick50/WeatherAPI/blob/master/Images/weatherAPI.JPG"></div>
 
 </body>
