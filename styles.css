@@ -20,12 +20,12 @@
 
 .mainEl {
     text-align: center;
-    background-color: lightgreen;
+    background-color: black;
+    color: white;
 }
 
 .footerEl {
     text-align: center;
-    display: flex;
 }
 
 .fa {
@@ -50,8 +50,13 @@
 .fa-cloud-sun-rain {
     color: white;
     font-size: 80px;
+}
 
-
+.col-lg-2 {
+    flex: 0 0 20%;
+    max-width: 20%;
+    margin-top: 20px;
+}
 
 
 
