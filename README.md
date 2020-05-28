@@ -1,7 +1,6 @@
 # WeatherAPI
 
 <body>
-<h1>Weather API</h1>
 
 <p>The class was tasked with creating a webpage that was able to draw information from a Weather API to be presented as informative and useful.  </p>
 
@@ -25,8 +24,7 @@
 
 <h3>Demo Photos</h3>
 
-    <div>
-        <img src="./images/weatherAPI.JPG" alt="Demo Pic"></img>
-    </div>
+    ![Image of Weather API homework](img src="./images/weatherAPI.JPG)
+   
 
 </body>
